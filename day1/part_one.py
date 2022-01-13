@@ -6,8 +6,8 @@ with open(FILENAME) as file:
     for line in file:
         measurements.append(int(line.strip()))
 
+# counting increases
 s = 0
-
 for i in range(1, len(measurements)):
     if measurements[i] > measurements[i - 1]:
         s = s + 1
